@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contours Studio — Aeron Dining Table</title>
+    <meta
+      name="description"
+      content="Experience the Aeron dining table through an interactive scroll-driven render that reveals every crafted angle of our signature piece."
+    />
+    <link rel="preload" as="style" href="styles.css" />
+    <link rel="preload" as="image" type="image/svg+xml" href="assets/frames/frame_0001.svg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="branding" aria-label="Contours Studio">
+        <span class="branding__mark">Contours</span>
+        <span class="branding__tagline">Furniture Studio</span>
+      </div>
+      <nav id="primary-navigation" class="main-navigation" aria-label="Primary">
+        <a href="#experience">Experience</a>
+        <a href="#design">Design Story</a>
+        <a href="#process">Process</a>
+        <a href="#contact" class="button button--ghost">Consultation</a>
+      </nav>
+      <button
+        type="button"
+        class="nav-toggle"
+        aria-expanded="false"
+        aria-controls="primary-navigation"
+        data-nav-toggle
+      >
+        <span class="nav-toggle__label">Menu</span>
+      </button>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="hero__copy">
+          <p class="eyebrow">Limited 2025 Edition</p>
+          <h1>The Aeron dining table, crafted for immersive gatherings.</h1>
+          <p>
+            Each Aeron table is sculpted from sustainably sourced walnut and finished with
+            aerospace-grade ceramic that resists heat, water, and the passing of trends. Scroll
+            below to explore a photorealistic render of the design in motion.
+          </p>
+          <div class="hero__actions">
+            <a class="button" href="#experience">See the interactive render</a>
+            <a class="button button--ghost" href="#contact">Download the spec sheet</a>
+          </div>
+        </div>
+        <div class="hero__aside">
+          <ul class="hero__stats">
+            <li><span>106"</span>Extended length</li>
+            <li><span>12</span>Guests comfortably seated</li>
+            <li><span>8 weeks</span>Build-to-ship timeline</li>
+          </ul>
+        </div>
+      </section>
+
+      <section
+        class="scroll-experience"
+        id="experience"
+        data-sequence-section
+        aria-label="Scroll to explore a 360 degree render of the Aeron dining table"
+      >
+        <div class="canvas-wrapper">
+          <canvas
+            id="product-sequence"
+            role="img"
+            aria-label="Animated render of the Aeron dining table"
+            width="1920"
+            height="1080"
+            data-frame-count="24"
+            data-file-prefix="assets/frames/frame_"
+            data-file-extension=".svg"
+            data-preload-count="8"
+          ></canvas>
+          <div class="canvas-overlay">
+            <p class="canvas-overlay__eyebrow">Scroll to rotate</p>
+            <h2>Aeron. Architectural poise in motion.</h2>
+            <p>
+              Progress through the story of the table as the render follows your scroll. Every
+              frame is rendered at 4K resolution to preserve the grain, joinery, and finishes that
+              set Aeron apart.
+            </p>
+          </div>
+          <div class="scroll-progress" aria-hidden="true">
+            <div class="scroll-progress__bar" data-scroll-progress></div>
+          </div>
+          <div class="scroll-instruction" data-scroll-instruction>Scroll to explore the table</div>
+          <div class="sequence-message" data-sequence-status aria-hidden="true">
+            Motion reduced. Displaying a single hero frame for an accessible experience.
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="design">
+        <div class="section__intro">
+          <p class="eyebrow">Design story</p>
+          <h2>Balanced contrasts define the Aeron silhouette.</h2>
+          <p>
+            We started with a generous chamfered tabletop that invites touch, then floated it on a
+            tensioned frame of brushed brass. The resulting negative space keeps the generous scale
+            feeling light and sculptural.
+          </p>
+        </div>
+        <div class="feature-grid">
+          <article class="feature-card">
+            <h3>Walnut with ceramic fusion</h3>
+            <p>
+              A kiln-fired ceramic skin protects the walnut substrate without masking its character.
+              The finish withstands red wine, citrus, and 500 °F serveware.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Invisible leaf mechanism</h3>
+            <p>
+              The extension leaf nests within the base and glides out silently on magnetic rails,
+              maintaining the uninterrupted waterfall grain.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Tailored to your space</h3>
+            <p>
+              Choose among three stain palettes and optional stone inlays. Each table is custom-built
+              in our Seattle studio after a detailed consultation.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section section--alt" id="process">
+        <div class="section__intro">
+          <p class="eyebrow">Build process</p>
+          <h2>A hands-on journey from sketch to install.</h2>
+          <p>
+            Our team oversees the full experience—from collaborative design reviews to white-glove
+            installation—so the Aeron table arrives perfectly tuned to the energy of your dining
+            space.
+          </p>
+        </div>
+        <div class="timeline">
+          <article>
+            <h3>01. Discovery session</h3>
+            <p>
+              Share your aspirations, finishes, and measurements. We create digital models and
+              material palettes tailored to your space.
+            </p>
+          </article>
+          <article>
+            <h3>02. Prototype review</h3>
+            <p>
+              Receive an interactive render package—including the scroll sequence above—to visualize
+              your table before we begin fabrication.
+            </p>
+          </article>
+          <article>
+            <h3>03. Craft &amp; install</h3>
+            <p>
+              Over eight weeks we craft the table, document progress, and schedule installation with
+              our in-house delivery team.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer" id="contact">
+      <div class="site-footer__content">
+        <div>
+          <h2>Schedule a private viewing</h2>
+          <p>
+            Visit our Seattle showroom or book a virtual walkthrough. We will prepare material
+            samples and alternate configurations based on your project.
+          </p>
+        </div>
+        <div class="footer-actions">
+          <a class="button" href="mailto:hello@contours.studio">hello@contours.studio</a>
+          <a class="button button--ghost" href="tel:+12065551234">+1 (206) 555-1234</a>
+        </div>
+      </div>
+      <div class="site-footer__meta">
+        <span>&copy; <span id="current-year"></span> Contours Studio</span>
+        <span>Instagram · Pinterest · LinkedIn</span>
+      </div>
+    </footer>
+
+    <script src="script.js" type="module"></script>
+  </body>
+</html>
