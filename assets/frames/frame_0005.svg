@@ -1,0 +1,37 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1920 1080'>
+  <defs>
+    <linearGradient id='bg4' x1='0%' y1='0%' x2='0%' y2='100%'>
+      <stop offset='0%' stop-color='#10131a'/>
+      <stop offset='100%' stop-color='#06080d'/>
+    </linearGradient>
+    <linearGradient id='wood4' x1='0%' y1='0%' x2='100%' y2='50%'>
+      <stop offset='0%' stop-color='#b7773e'/>
+      <stop offset='100%' stop-color='#b18757'/>
+    </linearGradient>
+    <filter id='shadow4' x='-20%' y='-20%' width='140%' height='140%'>
+      <feGaussianBlur in='SourceAlpha' stdDeviation='40'/>
+      <feOffset dx='0' dy='35'/>
+      <feComponentTransfer>
+        <feFuncA type='linear' slope='0.54'/>
+      </feComponentTransfer>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in='SourceGraphic'/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width='100%' height='100%' fill='url(#bg4)'/>
+  <g transform='translate(960 540) rotate(-16.304347826086957)'>
+    <g filter='url(#shadow4)'>
+      <polygon points='-380,-120 380,-120 320,30 -320,30' fill='url(#wood4)' stroke='#2e140c' stroke-width='6'/>
+      <polygon points='-360,30 -300,30 -260,320 -320,320' fill='#3c1f12'/>
+      <polygon points='300,30 360,30 320,320 260,320' fill='#3c1f12'/>
+      <polygon points='-80,30 -20,30 10,320 -50,320' fill='#3c1f12'/>
+      <polygon points='20,30 80,30 50,320 -10,320' fill='#3c1f12'/>
+      <polygon points='-320,30 320,30 200,200 -200,200' fill='rgba(0,0,0,0.1)'/>
+      <ellipse cx='0' cy='320' rx='400' ry='70' fill='rgba(0,0,0,0.45)'/>
+    </g>
+  </g>
+  <text x='50%' y='92%' text-anchor='middle' fill='rgba(255,255,255,0.65)' font-size='42' font-family='"Helvetica Neue", Arial, sans-serif' letter-spacing='5'>AERON DINING</text>
+</svg>
